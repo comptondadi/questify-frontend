@@ -1,0 +1,66 @@
+/* Styling for the Agent's Log Card */
+.agent-log-card {
+    background-color: #1f1f1f; /* A slightly lighter dark shade than the main background */
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #333; /* Subtle border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: var(--text-color-secondary); /* Use the secondary text color for less emphasis */
+}
+
+.agent-log-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--text-color-primary); /* Use primary text color for the title */
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 1px solid #444; /* Separator for the title */
+    padding-bottom: 10px;
+}
+
+.log-messages {
+    max-height: 100px; /* Limit the height to show ~4-5 messages */
+    overflow-y: auto; /* Add a scrollbar if messages overflow */
+    display: flex;
+    flex-direction: column-reverse; /* Shows the newest message at the top */
+    font-family: 'Courier New', Courier, monospace; /* A more "log-like" font */
+    font-size: 0.9rem;
+}
+
+.log-message {
+    margin: 2px 0;
+    padding: 5px;
+    border-radius: 4px;
+    animation: fadeIn 0.5s ease-in-out; /* Add a subtle fade-in animation for new messages */
+}
+
+/* Custom scrollbar for a more thematic feel */
+.log-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.log-messages::-webkit-scrollbar-track {
+    background: #1f1f1f;
+}
+
+.log-messages::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 3px;
+}
+
+.log-messages::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+}
+
+/* Keyframe for the fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

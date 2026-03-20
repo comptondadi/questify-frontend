@@ -1,0 +1,161 @@
+/* src/pages/LoginPage.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .login-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: rgba(30, 30, 30, 0.85); /* Slightly transparent surface color */
+    border: 1px solid #2a2a2a; /* Add a subtle border to define the box */
+    backdrop-filter: blur(5px); /* Optional: Adds a cool "glass" effect */
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .login-box h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    background: -webkit-linear-gradient(var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0px;
+  }
+  
+  .login-box .subtitle {
+    color: var(--text-color-secondary);
+    margin-bottom: 30px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--background-color);
+    border: 1px solid #333;
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: var(--border-radius);
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .login-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(106, 17, 203, 0.4);
+  }
+  
+  .error-message {
+    color: var(--error-color);
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+  .error-message a {
+    color: var(--error-color);
+    text-decoration: underline;
+  }
+/* src/pages/LoginPage.css */
+/* ... (keep all existing styles) ... */
+
+.navigation-link {
+  margin-top: 25px;
+  font-size: 0.9rem;
+}
+
+.navigation-link a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: text-decoration 0.2s;
+}
+
+.navigation-link a:hover {
+  text-decoration: underline;
+}
+
+.success-message {
+  color: var(--success-color);
+  background-color: rgba(0, 200, 83, 0.1);
+  padding: 10px;
+  border-radius: var(--border-radius);
+  margin-bottom: 15px;
+  border: 1px solid var(--success-color);
+}
+/* Add these styles to the bottom of src/pages/LoginPage.css */
+
+.footer-links {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--text-color-secondary);
+}
+
+.footer-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.how-it-works-link {
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.how-it-works-link:hover {
+  color: var(--secondary-color);
+}
+
+/* Styles for the content inside the modal */
+.about-content h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-content h3 {
+  border-bottom: 1px solid var(--primary-color);
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+.about-content p, .about-content li {
+  line-height: 1.6;
+  color: var(--text-color-secondary);
+}
+
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.faq-item h4 {
+  margin-bottom: 5px;
+  color: var(--text-color);
+}

@@ -1,0 +1,35 @@
+/* src/App.css - CORRECTED */
+
+.App {
+  position: relative; /* Establishes a positioning context for the ::before element */
+  z-index: 1; /* Ensures content is above the background */
+  
+  /* Layout styles for centering content */
+  width: 100%;
+  min-height: 100vh; /* Ensures the container fills the screen vertically */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* This pseudo-element is our fixed background layer */
+.App::before {
+  content: '';
+  position: fixed; /* Fixes it to the viewport, it will not scroll */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  /* --- BOTH the color and image go here --- */
+  background-color: var(--background-color); /* The solid dark color */
+  background-image: url('./assets/background.jpeg'); /* The background image */
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Puts this layer behind the .App content */
+  z-index: -1; 
+}

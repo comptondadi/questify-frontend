@@ -1,0 +1,33 @@
+/* src/index.css - CORRECTED */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #6a11cb;
+  --secondary-color: #2575fc;
+  --background-color: #121212; /* This will be our main background color */
+  --surface-color: #1e1e1e;
+  --text-color: #e0e0e0;
+  --text-color-secondary: #a0a0a0;
+  --success-color: #00c853;
+  --error-color: #ff3d00;
+  --border-radius: 8px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* --- IMPORTANT: REMOVE ALL BACKGROUND STYLES FROM BODY --- */
+  /* The body's background should be transparent to see the fixed background of .App */
+  
+  color: var(--text-color);
+}
+
+* {
+  box-sizing: border-box;
+}

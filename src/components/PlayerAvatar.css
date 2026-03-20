@@ -1,0 +1,26 @@
+/* src/components/PlayerAvatar.css */
+.player-avatar-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #333;
+    padding: 5px;
+    background-color: var(--background-color);
+    transition: border-color 0.5s;
+  }
+  
+  .player-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  /* Add some flair for higher levels */
+  .player-avatar-container.level-5 {
+    border-color: var(--secondary-color);
+  }
+  .player-avatar-container.level-10 {
+    border-color: gold;
+    box-shadow: 0 0 15px gold;
+  }
